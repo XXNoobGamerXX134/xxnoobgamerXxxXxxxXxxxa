@@ -148,4 +148,4 @@ msg.channel.send({embed: {
 
 });
 
-bot.login('NDI5MjUzOTI2MzI0NDA0MjI0.DZ-9kw.svx7TUZA8f7FkF3WRIu8Wmro03A');
+bot.login(process.env.BOT_TOKEN);
