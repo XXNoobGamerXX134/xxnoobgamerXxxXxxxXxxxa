@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const fs = require('fs');
 const moment = require('moment');
-var wartungsarbeiten = "nein";
+var wartungsarbeiten = "ja";
 const prefix = "/";
 
 //JSON
