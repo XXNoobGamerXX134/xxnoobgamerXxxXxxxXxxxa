@@ -145,6 +145,9 @@ msg.channel.send({embed: {
    }
 }
 
+    if(msg.content === "%testmsg") {
+     msg.guild.channels.get("403602677113683968").send("Hey Leute, ich bin jetzt die ganze Zeit online! :D Also ich bin jetzt 24/7 -Liebe grüße, LM7");   
+    }
 
 });
 
