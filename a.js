@@ -4,7 +4,7 @@ const fs = require('fs');
 const moment = require('moment');
 var wartungsarbeiten = "nein";
 const prefix = "/";
-const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const args = msg.content.slice(prefix.length).trim().split(/ +/g);
 
 //JSON
 let userData = JSON.parse(fs.readFileSync("Storage/userData.json", 'utf8'));
