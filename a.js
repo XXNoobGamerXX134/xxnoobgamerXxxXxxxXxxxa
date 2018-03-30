@@ -17,6 +17,11 @@ bot.user.setGame("Sage /hilfe für eine liste von Kommandos!");
 });
 
 bot.on('message', msg => {
+    
+    bot.on("ready", () => {
+       msg.guild.channels.get("403602677113683968").send("Ich über die Nacht in Wartungsarbeiten bleiben. Entschuldigt!"); 
+    });
+    
     const args = msg.content.slice(prefix.length).trim().split(/ +/g);
     var sender = msg.author;
 
