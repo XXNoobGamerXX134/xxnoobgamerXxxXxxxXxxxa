@@ -9,7 +9,11 @@ const prefix = "/";
 let userData = JSON.parse(fs.readFileSync("Storage/userData.json", 'utf8'));
 
 bot.on("ready", () => {
-//bot.user.setGame("Wartungsarbeiten");
+if(wartungsarbeiten === 'ja') {
+bot.user.setGame("Wartungsarbeiten");
+} else {
+bot.user.setGame("Sage /hilfe für eine liste von Kommandos!");   
+}
 });
 
 bot.on('message', msg => {
