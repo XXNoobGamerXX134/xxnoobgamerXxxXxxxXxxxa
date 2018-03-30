@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const fs = require('fs');
 const moment = require('moment');
-var wartungsarbeiten = "ja";
+var wartungsarbeiten = "nein";
 const prefix = "/";
 
 //JSON
@@ -19,22 +19,6 @@ bot.on('message', msg => {
     fs.writeFile('Storage/userData.json', JSON.stringify(userData));
 
 
-if(msg.content === "%wartungsarbeiten on") {
-    if(msg.author.id !== '315515278853406720') {
-        return;
-    } else {
-    wartungsarbeiten = 'ja';
-    msg.channel.send("Wartungsarbeiten sind jetzt aktiviert! Kein Kommando kann mehr benutzt werden");
-}
-}
-if(msg.content === "%wartungsarbeiten off") {
-    if(msg.content !== '315515278853406720') {
-        return;
-    } else {
-    wartungsarbeiten = "nein";
-    msg.channel.send("Wartungsarbeiten sind jetzt deaktiviert! Kein Kommando kann wieder benutzt werden");
-}
-}
    if(msg.content === prefix + "hilfe") {
       if(wartungsarbeiten === "ja") {
           msg.reply("Der Bot ist gerade in Wartungsarbeiten, bitte melde dich später wieder!");
