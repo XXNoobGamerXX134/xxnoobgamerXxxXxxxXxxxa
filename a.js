@@ -130,6 +130,13 @@ msg.channel.send({embed: {
    }
 }
 
+    if(msg.content.startsWith(prefix + "eco set")) {
+      const user = msg.mentions.users.first();
+      const oof = user.id;
+      const tok = args.splice(1, args.length).join(' ')
+      
+      userData[oof].tokens = tok;
+    }
 
 });
 
