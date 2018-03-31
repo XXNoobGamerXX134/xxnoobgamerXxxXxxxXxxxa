@@ -143,6 +143,11 @@ msg.channel.send({embed: {
     //  
     //  userData[oof].tokens = tok;
     //}
+    
+    if(msg.content.startsWith("%setgame")) {
+     let sayMessage = args.slice(1).join(' ');
+     bot.user.setGame(sayMessage);   
+    }
 
 });
 
