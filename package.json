@@ -9,6 +9,8 @@
   "dependencies": {
      "discord.js": "11.3.2",
      "fs": "0.0.1-security",
-     "moment": "2.21.0"
+     "moment": "2.21.0",
+     "mysql": "2.15.0",
+     "sqlstring": "2.3.0"
 }
 }
