@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const fs = require('fs');
 const moment = require('moment');
+const mysql = require("mysql");
 var wartungsarbeiten = "nein";
 const prefix = "/";
 
